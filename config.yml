@@ -1,4 +1,6 @@
 accounts:
+  - name: genesis
+    coins: ["20000token", "200000000stake", "1000000000bolitoken","1000000000bolibio"]
   - name: alice
     coins: ["20000token", "200000000stake"]
   - name: bob
