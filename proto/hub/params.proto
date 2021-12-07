@@ -1,0 +1,12 @@
+syntax = "proto3";
+package bolimoney.bolihub.hub;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/bolimoney/boli-hub/x/hub/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

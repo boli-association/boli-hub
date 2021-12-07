@@ -1,0 +1,15 @@
+syntax = "proto3";
+package bolimoney.bolihub.hub;
+
+import "gogoproto/gogo.proto";
+import "hub/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/bolimoney/boli-hub/x/hub/types";
+
+// GenesisState defines the hub module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  string port_id = 2;
+  // this line is used by starport scaffolding # genesis/proto/state
+}
